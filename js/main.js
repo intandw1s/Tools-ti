@@ -4,10 +4,69 @@ AOS.init({
 	once: true
 });
 
+
+function strdata() {
+	$.ajax({
+		type: "GET",
+		url: "admin/php/show_dt.php",
+		dataType: "JSON",
+		success: function (response) {
+			var count = response.length;
+
+			for (var i = 0; i < count; i++) {
+				var dtnstr = '<div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">' +
+					'<div class="image" style="background-image: url(' + "'admin/assets/images/list/" + response[i].img + '");"></div>' +
+					'<div class="text">' +
+
+					'<h3 class="font-weight-light"><a href="single-post.php?id=' + response[i].id + '">' + response[i].ttl + '</a></h3>' +
+
+
+					'</div>' +
+					'</div>'
+				$('.dt_list').append(dtnstr);
+			}
+		},
+		error: function (response) {
+			if (response.status == 0) {
+				alert("ERROR");
+			}
+		}
+	});
+}
+
+function strparaf() {
+	var id_str = location.search.replace('id=', '')[1];
+	$.ajax({
+		type: "POST",
+		url: "admin/php/show_data_1.php",
+		dataType: "JSON",
+		data: { dnt: id_str },
+		success: function (response) {
+			var count = response.length;
+
+			for (var i = 0; i < count; i++) {
+				$('.mb-3.ttl_str').html(response[i].ttl);
+				$('.col-md-7.pb-5.mr-auto').html(response[i].str);
+				//$('.pic').attr('src', '../admin/assets/images/list/' + response[i].img);
+				//$('#img_txt').val('admin/' + response[i].img);
+
+
+			}
+		},
+		error: function (response) {
+			if (response.status == 0) {
+				alert("ERROR");
+			}
+		}
+	});
+}
+
+
 jQuery(document).ready(function ($) {
 
 	"use strict";
-
+	strdata()
+	strparaf()
 	var siteMenuClone = function () {
 
 		$('.js-clone-nav').each(function () {

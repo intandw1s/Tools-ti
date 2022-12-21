@@ -110,18 +110,15 @@ if (!isset($_SESSION['login'])) {
         <div class="row">
 
 
-          <div class="col-lg-9">
+          <div class="col-lg-9 dt_list">
 
 
             <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-              <div class="image" style="background-image: url('images/img_1.jpg');"></div>
+              <div class="image" style="background-image: url('admin/assets/images/list/Ketua Terplilih Slide 1.png');"></div>
               <div class="text">
 
                 <h3 class="font-weight-light"><a href="single-post.html">Episode 08: How To Create Web Page Using Bootstrap 4</a></h3>
                 <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-
-
-
 
               </div>
             </div>

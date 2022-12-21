@@ -10,13 +10,13 @@ function vlogin() {
       dataType: "JSON",
       success: function (response) {
         if (response.status == 1) {
-          window.location.href = "/index.php"
+          window.location.href = "index_admin.php"
         } else {
           alert("Invalid Input")
         }
       },
       error: function () {
-        alert(response.error)
+        alert("Invalid Input")
       }
     });
   } else {

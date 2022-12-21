@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['loginadmin'])) {
-  header('Location: /Tools-ti/admin/login.php');
+  header('Location: /Tools-ti/admin/login_admin.php');
   exit;
 }
 ?>
@@ -18,6 +18,7 @@ if (!isset($_SESSION['loginadmin'])) {
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
   <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
@@ -41,20 +42,20 @@ if (!isset($_SESSION['loginadmin'])) {
         <ul class="nav">
           <li class="nav-item nav-category">Main</li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-        </ul>
-        <ul class="nav">
-          <li class="nav-item nav-category">Exit</li>
-          <li class="nav-item">
-            <a class="nav-link" href="php/logout.php">
-              <span class="icon-bg"><i class=""></i></span>
-              <span class="menu-title">Logout</span>
-            </a>
-          </li>
+          <ul class="nav">
+            <li class="nav-item nav-category">Exit</li>
+            <li class="nav-item">
+              <a class="nav-link" href="php/logout.php">
+                <span class="icon-bg"><i class=""></i></span>
+                <span class="menu-title">Logout</span>
+              </a>
+            </li>
+          </ul>
         </ul>
       </nav>
       <!-- partial -->
@@ -71,31 +72,33 @@ if (!isset($_SESSION['loginadmin'])) {
             </div>
           </div>
           <div class="d-xl-flex justify-content-between align-items-start">
-            <h2 class="text-dark font-weight-bold mb-2"> Overview dashboard </h2>
+            <h2 class="text-dark font-weight-bold mb-2"> Add Data </h2>
 
           </div>
           <div class="container">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Basic Table</h4>
-                <p class="card-description"> Add class <code>.table</code>
-                </p>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Judul Cerita</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Kelinci dan Kura-Kura</td>
-                      <td><i class="mdi mdi-border-color"> </i><i class="mdi mdi-delete"> </i> </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-                <button class="btn btn-primary" type="button" id="button-addon2">Add</button>
+                <h4 class="card-title">Basic form elements</h4>
+                <p class="card-description"> Basic form elements </p>
+                <form class="forms-sample" id="form_edit_dt">
+                  <div class="form-group">
+                    <label for="exampleInputName1">Judul Cerita</label>
+                    <input type="text" class="form-control" id="title_story" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea1">Cerita</label>
+                    <textarea class="form-control" id="story" rows="4"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Image Upload</label>
+                    
+                    <div class="input-group col-xs-12">
+                      <input type="file" accept="image/*" id="img_txt" class="form-control file-upload-info" placeholder="Upload Image">
+                    </div>
+                    <img src="" alt="picdt" class="pic">
+                  </div>
+                  <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                </form>
               </div>
             </div>
           </div>
@@ -106,8 +109,10 @@ if (!isset($_SESSION['loginadmin'])) {
         <footer class="footer">
           <div class="footer-inner-wraper">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com
+                2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from
+                Bootstrapdash.com</span>
             </div>
           </div>
         </footer>
@@ -133,6 +138,7 @@ if (!isset($_SESSION['loginadmin'])) {
   <!-- Custom js for this page -->
   <script src="assets/js/dashboard.js"></script>
   <!-- End custom js for this page -->
+  <script src="../js/admin/edit.js" type="text/javascript"></script>
 </body>
 
 </html>
