@@ -76,7 +76,7 @@ if (isset($_SESSION['loginadmin'])) {
                 </li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="active"><a href="login.html">Login</a></li>
+                <li class="active"><a href="login_admin.php">Login</a></li>
               </ul>
             </nav>
 

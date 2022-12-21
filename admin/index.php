@@ -47,6 +47,15 @@ if (!isset($_SESSION['loginadmin'])) {
             </a>
           </li>
         </ul>
+        <ul class="nav">
+          <li class="nav-item nav-category">Exit</li>
+          <li class="nav-item">
+            <a class="nav-link" href="php/logout.php">
+              <span class="icon-bg"><i class=""></i></span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+        </ul>
       </nav>
       <!-- partial -->
       <div class="main-panel">
