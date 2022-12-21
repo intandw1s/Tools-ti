@@ -66,14 +66,6 @@ if (isset($_SESSION['loginadmin'])) {
                 <li>
                   <a href="index.html">Beranda</a>
                 </li>
-                <li class="has-children">
-                  <a href="#">Dropdown</a>
-                  <ul class="dropdown arrow-top">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
-                  </ul>
-                </li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="active"><a href="login_admin.php">Login</a></li>
