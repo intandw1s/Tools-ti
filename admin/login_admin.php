@@ -84,7 +84,7 @@ if (isset($_SESSION['loginadmin'])) {
         <div class="row align-items-center justify-content-center text-center">
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="text-white">Login</h1>
+            <h1 class="text-white">Admin</h1>
             <a href="#">Beranda</a><span class="mx-2 text-white">&bullet;</span> <span class="text-white">Login</span>
           </div>
         </div>
@@ -97,8 +97,9 @@ if (isset($_SESSION['loginadmin'])) {
         <div class="row justify-content-center">
 
           <div class="col-md-5 mb-5">
-            <h3 class="mb-5">Login</h3>
-            <p></p>
+            <h3 class="mb-5">Login Admin</h3>
+            <p> Username: jiyucomel123</p>
+            <p> Password: go123for</p>
             <form id="form_login_admin" class="bg-white">
 
               <div class="">

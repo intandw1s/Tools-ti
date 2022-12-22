@@ -4,5 +4,5 @@
     session_unset();
     session_destroy();
 
-    header('Location: /Tools-ti/login.php');
+    header('Location: /podcast/Tools-ti/login.php');
     exit;
