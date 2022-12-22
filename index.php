@@ -10,7 +10,7 @@ if (!isset($_SESSION['login'])) {
 <html lang="en">
 
 <head>
-  <title>JiwaPenaku &mdash; Colorlib Website Template</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -66,17 +66,9 @@ if (!isset($_SESSION['login'])) {
                 <li class="active">
                   <a href="index.html">Beranda</a>
                 </li>
-                <li class="has-children">
-                  <a href="#">Dropdown</a>
-                  <ul class="dropdown arrow-top">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
-                  </ul>
-                </li>
+
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="php/logout.php">logout </a></li>
+                <li><a href="php/logout.php">Logout </a></li>
               </ul>
             </nav>
 
@@ -94,11 +86,11 @@ if (!isset($_SESSION['login'])) {
       <div class="row align-items-center text-center text-md-left">
 
         <div class="col-lg-4">
-          <h1 class="mb-3 display-3">Selamat Datang di JiwaBacaku</h1>
+          <h1 class="mb-3 display-3">Selamat Datang di </h1> <h1 class="mb-3 display-3"> JiwaPenaku💫.</h1>
           <p>Join with us! Selami tiap cerita disini! Tenangkan hati, jiwa dan pikiranmu melalui cerita kami</p>
         </div>
         <div class="col-lg-8">
-          <img src="images/1x/asset-1.png" alt="Image" class="img-fluid">
+          <img src="images/1x/jp2.jpg" alt="Image" class="img-fluid">
         </div>
       </div>
     </div>
@@ -196,159 +188,13 @@ if (!isset($_SESSION['login'])) {
       </div>
     </div>
 
-    <!-- <div class="site-section">
-      <div class="container" data-aos="fade-up">
-        <div class="row mb-5">
-          <div class="col-md-12 text-center">
-            <h2 class="font-weight-bold text-black">Behind The Mic</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Megan Smith</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Philip Martin</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Steven Ericson</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_5.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Nathan Dumlao</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_6.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div> -->
-
     <div class="site-section bg-light block-13">
 
     </div>
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/1.png);" data-aos="fade" data-stellar-background-ratio="0.0">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/jp.jpg);" data-aos="fade" data-stellar-background-ratio="0.0">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <h2>Subscribe</h2>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit nihil saepe libero sit odio obcaecati veniam.</p>
-            <form action="#" method="post" class="site-block-subscribe">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
     </div>
@@ -364,22 +210,12 @@ if (!isset($_SESSION['login'])) {
           <div class="col-lg-3 mx-auto">
             <h3>Navigation</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Podcasts</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="#">Story</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-4">
-            <h3>Subscribe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quibusdam!</p>
-            <form action="#" class="form-subscribe">
-              <input type="email" class="form-control mb-3" placeholder="Enter Email">
-              <input type="submit" class="btn btn-primary" value="Subscribe">
-            </form>
-          </div>
-        </div>
+
 
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
@@ -388,7 +224,7 @@ if (!isset($_SESSION['login'])) {
               Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
               <script>
                 document.write(new Date().getFullYear());
-              </script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              </script> All rights reserved | By : <i class="icon-heart-o" aria-hidden="true"></i> Intan Dwi Sukma <i class="icon-heart-o" aria-hidden="true"></i></a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
